@@ -5,13 +5,13 @@
     --bt-nav-cl: #2196F3;
     --paragraf-color: #757575;
     --background-cl-body: #FFFFFF;
-    --logo-cl: #2196F3;
+    --footer__logo-cl: #2196F3;
     --logo-secondary-cl: #000000;
     --hero-background-cl: #2F303A;
     --bt-cl: #2196F3;
     --bt-cl-secondary: #188CE8;
     --team-background-cl: #F5F4FA;
-    --footer-link-cl: rgba(255, 255, 255, 0.6);
+    --footer-adress__link-cl: rgba(255, 255, 255, 0.6);
     --border-line: #EEEEEE;
     --header-line: #ECECEC;
     --social-cl: #AFB1B8;
@@ -108,8 +108,8 @@ img {
     padding-bottom: 24px;
 }
 
-.logo-cl {
-    color: var(--logo-cl)
+.footer__logo-cl {
+    color: var(--footer__logo-cl)
 }
 
 .header__list {
@@ -221,7 +221,7 @@ img {
     margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -306,7 +306,7 @@ img {
     }
 }
 
-.hero-bt {
+.hero-bt__open--modal {
 
     background-color: var(--bt-cl);
     cursor: pointer;
@@ -332,8 +332,8 @@ img {
 
 }
 
-.hero-bt:hover,
-.hero-bt:focus {
+.hero-bt__open--modal:hover,
+.hero-bt__open--modal:focus {
     background: var(--bt-cl-secondary);
     border-radius: 50%;
 }
@@ -364,7 +364,7 @@ img {
     transition: opacity 250ms, visibility 250ms;
 }
 
-.modal-wrapper {
+.backdrop__modal-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -378,7 +378,7 @@ img {
 
 }
 
-.modal-btn-close {
+.backdrop-form__btn-sub__close--modal {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -396,8 +396,8 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.modal-btn-close:hover,
-.modal-btn-close:focus {
+.backdrop-form__btn-sub__close--modal:hover,
+.backdrop-form__btn-sub__close--modal:focus {
     fill: var(--bt-cl);
 }
 
@@ -405,7 +405,7 @@ img {
     margin-bottom: 50px;
 }
 
-.backdrop-text {
+.backdrop-form__text {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -419,14 +419,14 @@ img {
          backdrop форма
 ============================
  */
-.modal-label {
+.backdrop-form__label {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.form-text {
+.backdrop-form__label-text {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -435,11 +435,11 @@ img {
     margin-bottom: 4px;
 }
 
-.modal-label:hover .modal-icon-input {
+.backdrop-form__label:hover .backdrop-form__icon-input {
     fill: var(--bt-cl);
 }
 
-.modal-input {
+.backdrop-form__input {
     outline-style: none;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -448,12 +448,12 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-label:hover .modal-input,
-.modal-input:focus {
+.backdrop-form__label:hover .backdrop-form__input,
+.backdrop-form__input:focus {
     border-color: var(--bt-cl);
 }
 
-.modal-icon-input {
+.backdrop-form__icon-input {
     position: absolute;
     bottom: 10px;
     left: 12px;
@@ -462,7 +462,7 @@ img {
     cursor: pointer;
 }
 
-.modal-input:focus-within+.modal-icon-input {
+.backdrop-form__input:focus-within+.backdrop-form__icon-input {
     fill: var(--bt-cl);
 
 }
@@ -475,7 +475,7 @@ img {
     opacity: 0;
 }
 
-.warning {
+.backdrop-form__input-warning {
     position: absolute;
     font-weight: 400;
     font-size: 12px;
@@ -488,19 +488,19 @@ img {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus~.warning {
+.backdrop-form__input:focus~.backdrop-form__input-warning {
     opacity: 1;
 }
 
-.modal-input:valid~.warning {
+.backdrop-form__input:valid~.backdrop-form__input-warning {
     opacity: 0;
 }
 
-.modal-label.comment {
+.backdrop-form__label.comment {
     margin-bottom: 20px;
 }
 
-.modal-comment {
+.backdrop-form__comment {
     resize: none;
     outline-style: none;
     font-weight: 400;
@@ -509,17 +509,16 @@ img {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-top: 4px 0 20px 0;
     padding: 12px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-comment:hover,
-.modal-comment:focus {
+.backdrop-form__comment:hover,
+.backdrop-form__comment:focus {
     border-color: var(--bt-cl);
 }
 
-.modal-checkbox {
+.backdrop-form__checkbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -529,7 +528,7 @@ img {
     color: #757575;
 }
 
-.form-checkbox-text {
+.backdrop-form__checkbox-text {
     color: var(--paragraf-color);
     font-weight: 400;
     line-height: 1.71;
@@ -539,7 +538,7 @@ img {
     color: var(--bt-cl);
 }
 
-.modal-input-check {
+.backdrop-form__input-check {
     background: var(--bt-cl);
     border-radius: 2px;
     margin-right: 7px;
@@ -547,7 +546,7 @@ img {
 
 
 
-.modal-checkbox-style {
+.backdrop-form__checkbox-style {
     width: 16px;
     height: 15px;
     display: flex;
@@ -561,29 +560,29 @@ img {
     cursor: pointer;
 }
 
-.modal-icon-checkbox {
+.backdrop-form__checkbox-icon {
     opacity: 0;
     transition: 255ms ease-in;
     fill: var(--background-cl-body);
 
 }
 
-.modal-checkbox-style:hover,
-.modal-input-check:focus-within+.modal-checkbox-style {
+.backdrop-form__checkbox-style:hover,
+.backdrop-form__input-check:focus-within+.backdrop-form__checkbox-style {
     outline-color: var(--bt-cl);
 
 }
 
-.modal-input-check:checked+.modal-checkbox-style {
+.backdrop-form__input-check:checked+.backdrop-form__checkbox-style {
     background-color: var(--bt-cl);
     outline-color: var(--bt-cl);
 }
 
-.modal-input-check:checked+.modal-checkbox-style .modal-icon-checkbox {
+.backdrop-form__input-check:checked+.backdrop-form__checkbox-style .backdrop-form__checkbox-icon {
     opacity: 1;
 }
 
-.modal-btn {
+.backdrop-form__btn-sub {
     background-color: var(--bt-cl);
     cursor: pointer;
     font-family: inherit;
@@ -608,8 +607,8 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.backdrop-form__btn-sub:hover,
+.backdrop-form__btn-sub:focus {
     background: var(--bt-cl-secondary);
 }
 
@@ -618,7 +617,7 @@ img {
         особености
 ============================
  */
-.peculiarities-name {
+.peculiarities__name {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -626,18 +625,18 @@ img {
     color: var(--text-black-cl);
 }
 
-.peculiarities-list {
+.peculiarities__list {
     display: flex;
 }
 
-.peculiarities-item {
+.peculiarities__item {
     margin-left: 30px;
     width: 270px;
 }
 
 
 
-.peculiarities-icons {
+.peculiarities__icons {
     display: flex;
     background-color: var(--team-background-cl);
     justify-content: center;
@@ -649,20 +648,20 @@ img {
     margin-bottom: 30px;
 }
 
-.peculiarities-name {
+.peculiarities__name {
     flex-direction: row;
     margin-bottom: 10px;
 }
 
-.peculiarities-text {
+.peculiarities__text {
     flex-direction: row;
 }
 
-.peculiarities-item:first-child {
+.peculiarities__item:first-child {
     margin-left: 0px;
 }
 
-.peculiarities-text {
+.peculiarities__text {
     line-height: 1.71;
     color: var(--paragraf-color);
 }
@@ -676,8 +675,8 @@ img {
     padding-top: 0;
 }
 
-.work-title,
-.team-title {
+.work__title,
+.team__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -685,25 +684,25 @@ img {
     color: var(--text-black-cl);
 }
 
-.work-title {
+.work__title {
     margin-bottom: 50px;
 }
 
-.work-list {
+.work__list {
     display: flex;
 }
 
-.work-images {
+.work__images {
     position: relative;
     margin-left: 30px;
 
 }
 
-.work-images:first-child {
+.work__images:first-child {
     margin-left: 0px;
 }
 
-.work-images::before {
+.work__images::before {
     position: absolute;
 
 
@@ -711,7 +710,7 @@ img {
 
 
 
-.work-text {
+.work__text {
     position: absolute;
     font-weight: 700;
     line-height: 1.14;
@@ -736,15 +735,15 @@ img {
     background-color: var(--team-background-cl);
 }
 
-.team-title {
+.team__title {
     margin-bottom: 50px;
 }
 
-.team-list {
+.team__list {
     display: flex;
 }
 
-.team-item {
+.team__item {
     background-color: var(--background-cl-body);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -752,7 +751,7 @@ img {
 
 }
 
-.team-item:first-child {
+.team__item:first-child {
     margin-left: 0px;
 }
 
@@ -761,7 +760,7 @@ img {
     padding-bottom: 30px;
 }
 
-.team-name {
+.team-box___name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -771,7 +770,7 @@ img {
     margin-bottom: 10px;
 }
 
-.team-text {
+.team-box___text {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -779,16 +778,16 @@ img {
     margin-bottom: 16px;
 }
 
-.social-list {
+.team-box__social-list {
     display: flex;
     justify-content: center;
 }
 
-.social-item {
+.team-box___social-item {
     margin-right: 10px;
 }
 
-.social-item:last-child {
+.team-box___social-item:last-child {
     margin-right: 0;
 
 }
@@ -830,7 +829,7 @@ img {
  ===========================
 */
 
-.client-title {
+.client__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -840,20 +839,20 @@ img {
     margin-bottom: 50px;
 }
 
-.client-list {
+.client__list {
     display: flex;
     justify-content: center;
 }
 
-.client-item {
+.client__item {
     margin-right: 30px;
 }
 
-.client-item:last-child {
+.client__item:last-child {
     margin-right: 0;
 }
 
-.clients-link {
+.clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -866,8 +865,8 @@ img {
 
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
     fill: var(--bt-nav-cl);
     border-color: var(--bt-cl);
 
@@ -884,12 +883,12 @@ img {
     padding-bottom: 60px;
 }
 
-.footer-box {
+.footer__conteiner {
     display: flex;
     align-items: baseline;
 }
 
-.footer-logo {
+.footer__logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -900,24 +899,24 @@ img {
     margin-bottom: 20px;
 }
 
-.logo-cl {
-    color: var(--logo-cl);
+.footer__logo-cl {
+    color: var(--footer__logo-cl);
 }
 
-.footer-box-adress {
+.footer__address {
     margin-right: 70px;
 }
 
-.footer-item {
+.footer-adress__item {
     margin-bottom: 8px;
     width: 231px;
 }
 
-.footer-item:last-child {
+.footer-adress__item:last-child {
     margin-bottom: 0px;
 }
 
-.footer-link {
+.footer-adress__link {
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
@@ -925,21 +924,21 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-adress__link:hover,
+.footer-adress__link:focus {
     color: var(--bt-nav-cl);
 }
 
-.footer-link-contact {
+.footer-adress__link-contact {
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
-    color: var(--footer-link-cl);
+    color: var(--footer-adress__link-cl);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link-contact:hover,
-.footer-link-contact:focus {
+.footer-adress__link-contact:hover,
+.footer-adress__link-contact:focus {
     color: var(--bt-nav-cl);
 }
 
@@ -950,7 +949,7 @@ img {
  ===========================
  */
 
-.footer-text {
+.footer__social-text {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -958,20 +957,20 @@ img {
     margin-bottom: 20px;
 }
 
-.footer-social-list {
+.footer-social__list {
     display: flex;
 }
 
-.footer-item-social {
+.footer-social__item {
     display: flex;
     margin-right: 10px;
 }
 
-.footer-item-social:last-child {
+.footer-social__item:last-child {
     margin-right: 0;
 }
 
-.footer-social-link {
+.footer-social__link {
     display: block;
     display: flex;
     justify-content: center;
@@ -984,8 +983,8 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
     background-color: var(--bt-cl);
 }
 
@@ -994,25 +993,25 @@ img {
         Расылка
  ===========================
  */
-.footer-modal {
+.footer__modal {
     display: flex;
     margin-left: 93px;
 }
 
-.footer-modal-label {
+.footer-backdrop__label {
     display: flex;
     flex-direction: column;
     margin-right: 12px;
 }
 
-.footer-form-text {
+.footer-backdrop__label-text {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--background-cl-body)
 }
 
-.footer-modal-input {
+.footer-backdrop__input {
     cursor: pointer;
     margin-top: 20px;
     padding: 15px 16px 15px 16px;
@@ -1026,20 +1025,16 @@ img {
     outline: none;
 }
 
-.footer-modal-input:hover,
-.footer-modal-input:focus {
+.footer-backdrop__input:hover,
+.footer-backdrop__input:focus {
     border-color: var(--bt-cl);
 }
 
-.footer-modal-label:focus-within+.footer-modal-input {
+.footer-backdrop__label:focus-within+.footer-backdrop__input {
     border-color: var(--bt-cl);
 }
 
-.footer-box-btn {
-    position: relative;
-}
-
-.footer-modal-btn {
+.footer-modal__btn-sub {
     background-color: var(--bt-cl);
     cursor: pointer;
     font-family: inherit;
@@ -1061,12 +1056,12 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-modal-btn:hover,
-.footer-modal-btn:focus {
+.footer-modal__btn-sub:hover,
+.footer-modal__btn-sub:focus {
     background: var(--bt-cl-secondary);
 }
 
-.footer-modal-icon {
+.footer__modal-icon {
     position: absolute;
     bottom: 12px;
     right: 28px;
@@ -1078,17 +1073,17 @@ img {
         Портфолио
  ===========================
  */
-.servise-list {
+.portfolio__servise-list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.servise-item {
+.portfolio__servise-item {
     margin-left: 8px;
 }
 
-.servise-item:first-child {
+.portfolio__servise-item:first-child {
     margin-left: 0px;
 }
 
@@ -1128,28 +1123,28 @@ img {
         проекты
  ===========================
  */
-.projects-list {
+.portfolio-projects__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.projects-item {
+.portfolio-projects__item {
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
-.projects-link {
+.portfolio-projects__link {
     display: block;
 }
 
-.overley {
+.portfolio__overley {
     position: relative;
     overflow: hidden;
 }
 
 
 
-.projects-overley {
+.portfolio-projects__overley {
     position: absolute;
     bottom: 0%;
     right: 0%;
@@ -1161,7 +1156,7 @@ img {
     transition: 250ms ease;
 }
 
-.overley-text {
+.portfolio-projects__overley-text {
     padding: 63px 24px;
     justify-content: center;
     align-items: center;
@@ -1172,26 +1167,26 @@ img {
     color: #FFFFFF;
 }
 
-.projects-link:hover .overley .projects-overley,
-.projects-link:focus .overley .projects-overley {
+.portfolio-projects__link:hover .portfolio__overley .portfolio-projects__overley,
+.portfolio-projects__link:focus .portfolio__overley .portfolio-projects__overley {
     transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-link:hover,
-.projects-link:focus {
+.portfolio-projects__link:hover,
+.portfolio-projects__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-item:nth-child(3n+3) {
+.portfolio-projects__item:nth-child(3n+3) {
     margin-right: 0px;
 }
 
-.projects-item:nth-last-child(-n+3) {
+.portfolio-projects__item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
 
-.project-box {
+.project__box {
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
@@ -1202,7 +1197,7 @@ img {
 
 }
 
-.projects-title {
+.projects__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -1213,7 +1208,7 @@ img {
     margin-bottom: 4px;
 }
 
-.projects-text {
+.projects__text {
     font-style: normal;
     font-size: 16px;
     line-height: 1.87;
