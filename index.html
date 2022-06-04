@@ -6,23 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- подключения шрифтов -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
+    <!-- Подключения нормалайз -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Подключения стилей -->
+
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__conteiner conteiner ">
             <nav class="header__nav">
-                <a class="header__logo link" href="./index.html"><span class="footer__logo-cl">Web</span>Studio</a>
+                <a class="header__logo link" href="./index.html"><span class="header__logo-cl">Web</span>Studio</a>
                 <ul class="header__list list">
                     <li class="header__item"><a class="header__link link accent" href="./index.html">Студия</a></li>
                     <li class="header__item"><a class="header__link link" href="./portfolio.html">Портфолио</a></li>
@@ -33,11 +42,11 @@
                 <ul class="header__list-contact list">
                     <li class="header__item-contact"><a class="header__link-contact link"
                             href="mailto:info@devstudio.com">
-                            <svg class="header__icon" width="16" height="12">
+                            <svg class="header__icons" width="16" height="12">
                                 <use href="./images/icons/sprite.svg#icon-mail"></use>
                             </svg>info@devstudio.com</a></li>
                     <li class="header__item-contact"><a class="header__link-contact link" href="tel:+380961111111">
-                            <svg class="header__icon" width="10" height="16">
+                            <svg class="header__icons" width="10" height="16">
                                 <use href="./images/icons/sprite.svg#icon-smartphone"></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
@@ -185,32 +194,33 @@
                     <li class="team__item">
                         <img class="team__images" src="./images/team/team.jpg" alt="Игорь Демьяненко" width="270"
                             height="260">
-                        <div class="team-box">
+                        <div class="team__box">
                             <h3 class="team-box___name">Игорь Демьяненко</h3>
                             <p lang="en" class="team-box___text">Product Designer</p>
                             <ul class="team-box__social-list list">
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
-                                        aria-label="instagram">
+                                <li class="team-box___social-item">
+                                    <a class="team-social__link link" href="#" aria-label="instagram">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item">
+                                    <a class="team-social__link link" href="#"
                                         aria-label="twitter">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="facebook">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item-icons"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item-icons"><a class="team-social__link link" href="#"
                                         aria-label="linkedin">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-linkedin"></use>
@@ -222,32 +232,32 @@
                     </li>
                     <li class="team__item"><img class="team__images" src="./images/team/team2.jpg" alt="Ольга Репина"
                             width="270" height="260">
-                        <div class="team-box">
+                        <div class="team__box">
                             <h3 class="team-box___name">Ольга Репина</h3>
                             <p lang="en" class="team-box___text">Frontend Developer</p>
                             <ul class="team-box__social-list list">
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="instagram">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="twitter">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="facebook">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item-icons"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item-icons"><a class="team-social__link link" href="#"
                                         aria-label="linkedin">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-linkedin"></use>
@@ -260,32 +270,32 @@
                     <li class="team__item">
                         <img class="team__images" src="./images/team/team3.jpg" alt="Николай Тарасов" width="270"
                             height="260">
-                        <div class="team-box">
+                        <div class="team__box">
                             <h3 class="team-box___name">Николай Тарасов</h3>
                             <p lang="en" class="team-box___text">Marketing</p>
                             <ul class="team-box__social-list list">
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="instagram">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="twitter">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="facebook">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item-icons"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item-icons"><a class="team-social__link link" href="#"
                                         aria-label="linkedin">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-linkedin"></use>
@@ -297,32 +307,32 @@
                     </li>
                     <li class="team__item"><img class="team__images" src="./images/team/team4.jpg" alt="Михаил Ермаков"
                             width="270" height="260">
-                        <div class="team-box">
+                        <div class="team__box">
                             <h3 class="team-box___name">Михаил Ермаков</h3>
                             <p lang="en" class="team-box___text">UI Designer</p>
                             <ul class="team-box__social-list list">
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="instagram">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="twitter">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item"><a class="team-social__link link" href="#"
                                         aria-label="facebook">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="team-box___social-item-icons"><a class="team-social-link link" href="#"
+                                <li class="team-box___social-item-icons"><a class="team-social__link link" href="#"
                                         aria-label="linkedin">
                                         <svg class="team-box___social-icons" width="20px" height="20px">
                                             <use href="./images/icons/sprite.svg#icon-linkedin"></use>
