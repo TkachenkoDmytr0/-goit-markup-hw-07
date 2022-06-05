@@ -35,8 +35,8 @@
 
     &:hover,
     &:focus {
-    color: var(--bt-nav-cl);
-}
+        color: var(--bt-nav-cl);
+    }
 }
 
 .footer-adress__link-contact {
@@ -48,34 +48,7 @@
 
     &:hover,
     &:focus {
-    color: var(--bt-nav-cl);
-}
-}
-
-/*
-============================
- footer social
- ===========================
- */
-
-.footer__social-text {
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--background-cl-body);
-    margin-bottom: 20px;
-}
-
-.footer-social__list {
-    display: flex;
-}
-
-.footer-social__item {
-    display: flex;
-    margin-right: 10px;
-
-    &:last-child {
-        margin-right: 0;
+        color: var(--bt-nav-cl);
     }
 }
 
@@ -115,21 +88,22 @@
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     &:hover,
     &:focus {
         border-color: var(--bt-cl);
-    }    
+    }
 }
 
 .footer-backdrop__label:focus-within+.footer-backdrop__input {
     border-color: var(--bt-cl);
 }
 
-.footer__modal-btn{
+.footer__modal-btn {
     position: relative;
 
 }
+
 .footer__modal-icon {
     position: absolute;
     bottom: 12px;

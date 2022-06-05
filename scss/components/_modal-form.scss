@@ -3,7 +3,7 @@
          backdrop
 ============================
  */
- .backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -87,7 +87,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
 
     padding: 11px 12px 11px 36px;
-    
+
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -196,7 +196,7 @@
     outline: 2px solid var(--text-black-cl);
     outline-offset: -2px;
     border-radius: 2px;
-    
+
     transition: background-color 255ms cubic-bezier(0.4, 0, 0.2, 1), outline-color 255ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
@@ -222,6 +222,3 @@
 .backdrop-form__input-check:checked+.backdrop-form__checkbox-style .backdrop-form__checkbox-icon {
     opacity: 1;
 }
-
-
-

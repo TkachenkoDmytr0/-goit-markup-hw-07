@@ -442,6 +442,36 @@ img {
 
 /*
 ============================
+ footer social
+ ===========================
+ */
+.footer__social-text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--background-cl-body);
+  margin-bottom: 20px;
+}
+
+.footer-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+.footer-social__item:last-child {
+  margin-right: 0;
+}
+
+/*
+============================
          backdrop
 ============================
  */
@@ -1125,36 +1155,6 @@ img {
 
 .footer-adress__link-contact:hover, .footer-adress__link-contact:focus {
   color: var(--bt-nav-cl);
-}
-
-/*
-============================
- footer social
- ===========================
- */
-.footer__social-text {
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--background-cl-body);
-  margin-bottom: 20px;
-}
-
-.footer-social__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer-social__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 10px;
-}
-
-.footer-social__item:last-child {
-  margin-right: 0;
 }
 
 /*

@@ -3,7 +3,7 @@
         особености
 ============================
  */
- .peculiarities__name {
+.peculiarities__name {
     flex-direction: row;
     font-size: 14px;
     font-weight: 700;
@@ -22,9 +22,9 @@
     margin-left: 30px;
     width: 270px;
 
-&:first-child {
-    margin-left: 0px;
-}
+    &:first-child {
+        margin-left: 0px;
+    }
 }
 
 .peculiarities__icons {
@@ -45,5 +45,3 @@
     line-height: 1.71;
     color: var(--paragraf-color);
 }
-
-

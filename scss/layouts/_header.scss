@@ -3,7 +3,7 @@
         Header
 ============================
  */
- .header {
+.header {
     border-bottom: 1px solid var(--header-line);
 }
 
@@ -24,7 +24,7 @@
 
 .header__item {
     margin-right: 50px;
-    
+
     &:last-child {
         margin-right: 0;
     }
@@ -50,8 +50,8 @@
 
     &:hover,
     &:focus {
-    color: var(--bt-nav-cl);
-    }    
+        color: var(--bt-nav-cl);
+    }
 }
 
 .header__link.accent::after {
@@ -65,7 +65,7 @@
     border-radius: 2px;
 }
 
-.accent{
+.accent {
     color: var(--bt-nav-cl);
 }
 
@@ -85,8 +85,8 @@
 
     &:hover,
     &:focus {
-    color: var(--bt-nav-cl);
-}
+        color: var(--bt-nav-cl);
+    }
 }
 
 .header__icons {
@@ -94,6 +94,6 @@
 
     &:hover,
     &:focus {
-    color: var(--bt-nav-cl);
-}
+        color: var(--bt-nav-cl);
+    }
 }

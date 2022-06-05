@@ -28,5 +28,29 @@
 
 }
 
-//footer
+/*
+============================
+ footer social
+ ===========================
+ */
 
+.footer__social-text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--background-cl-body);
+    margin-bottom: 20px;
+}
+
+.footer-social__list {
+    display: flex;
+}
+
+.footer-social__item {
+    display: flex;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
